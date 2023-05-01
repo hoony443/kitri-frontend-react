@@ -11,7 +11,7 @@
 - https://ko.legacy.reactjs.org/docs/getting-started.html
 
 # 목차
-[1. Why react?](#1.-Why-react?)
+1. Why react?
 - [개발 환경 설정](#개발-환경-설정)
   - [VSCode 설치 및 설정](#VSCode-설치-및-설정)
   - [Node.js 설치](#Node.js-설치)
@@ -47,7 +47,7 @@
    3. [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
    4. [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
    5. [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-### Node.js 설치 
+### Node.js 설치
 - Windows 의 경우엔, [Node.js 공식 홈페이지](https://nodejs.org/en) 에서 좌측에 나타나는 LTS 버전을 설치해주세요.
 - macOS / Linux 의 경우엔, nvm 이라는 도구를 사용하여 Node.js 를 설치하시는 것을 권장드립니다.
 ```
