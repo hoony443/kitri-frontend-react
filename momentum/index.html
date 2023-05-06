@@ -1,0 +1,49 @@
+<!-- 
+    1. html, css 작성
+    2. 배경 이미지 5개 chrome 다운로드
+    3. weather.js 실습
+    4. clock.js 실습
+    5. greeting.js 실습
+    6. todo.js 실습
+    7. bg.js 실습
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Things...!</title> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="js-clock">
+            <h1 id="clock-title">00:00</h1>    
+        </section>
+        <section>
+            <form class="js-form form">
+                <input type="text" placeholder="What is your name?" />
+            </form>
+            <h4 class="js-greetings greetings"></h4>
+        </section>
+        <section>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="To-do-list" />
+            </form>
+            <ul class="js-toDoList">
+            </ul>
+        </section> 
+        <section>
+            <span class="js-weather"></span>
+        </section>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
+    </main>
+    <footer></footer>
+</body>
+</html>
