@@ -5,6 +5,8 @@
 스나이퍼팩토리 & 정동훈
 ***
 
+채팅방: [Slack URL](https://join.slack.com/t/kitrix/shared_invite/zt-1ujwdwpu8-CWbtAvLowOpPD6FhXwk~5A) 
+
 참고문서
 - https://developer.mozilla.org/ko/docs/Web/HTML
 - https://developer.mozilla.org/ko/docs/Web/CSS
