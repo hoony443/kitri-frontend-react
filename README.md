@@ -49,6 +49,8 @@
    3. [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
    4. [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
    5. [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+   5. [html css snipets] (https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+   6. [intellicode] (https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 ### Node.js 설치
 - Windows 의 경우엔, [Node.js 공식 홈페이지](https://nodejs.org/en) 에서 좌측에 나타나는 LTS 버전을 설치해주세요.
 - macOS / Linux 의 경우엔, nvm 이라는 도구를 사용하여 Node.js 를 설치하시는 것을 권장드립니다.
