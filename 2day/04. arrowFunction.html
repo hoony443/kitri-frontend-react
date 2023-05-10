@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<!-- 컴포넌트를 다른 컴포넌트로 넣는 방법 -->
+
+<body>
+
+    <div id="root"></div>
+
+</body>
+<!-- React JS는 어플리케이션이 아주 Interactive하도록 만들어주는 library -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<!-- React DOM은 React element들을 HTML body에 둘 수 있도록 해준다 -->
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<!-- 바벨은 JSX를 브라우저가 이해 할 수 있는 형태로 바꾸어 준다 -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+    let a = 0;
+    const root = document.getElementById("root");
+    const Title = () => (
+        <h1 id="h1" style={{ color: "blue" }} onMouseEnter={() => console.log("마우스 오버!")} >Total Clicks: 0</h1 >
+    );
+    const Button = () => (
+        <button onClick={() => { a = a + 1; console.log(a); }}>Click me</button>
+    );
+    const Container = () => (<div> <Title /> <Button /> </div>);
+    ReactDOM.render(<Container />, root);
+
+</script>
+
+
+</html>

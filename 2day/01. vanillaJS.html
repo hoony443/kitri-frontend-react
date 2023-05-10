@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<!-- 바닐라 js 예시 -->
+
+<body>
+    <h1>Total clicks: 0</h1>
+    <button id="btn">Click me</button>
+</body>
+
+<script>
+    const btn = document.getElementById("btn");
+    const h1 = document.querySelector("h1");
+    let a = 0;
+    function countUp() {
+        a = a + 1;
+        console.log(a);
+        h1.innerText = `Total clicks: ${a}`;
+    }
+    btn.addEventListener("click", countUp);
+</script>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+</head>
+<!-- 리액트 요소 만들어보기 -->
+<body>
+    <div id="root">
+        <div>
+            <header>
+                <h1>hello world shop</h1>
+                <nav>
+                    <ul>
+                        <li>링크1</li>
+                        <li>링크2</li>
+                        <li>링크3</li>
+                        <li>링크4</li>
+                        <li>링크5</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h2>hello world!</h2>
+                <p>product list</p>
+                <ul>
+                    <li>best seller 옷1</li>
+                    <li>best seller 옷2</li>
+                    <li>best seller 옷3</li>
+                    <li>best seller 옷4</li>
+                    <li>best seller 옷5</li>
+                    <li>best seller 옷6</li>
+                    <li>best seller 옷7</li>
+                    <li>best seller 옷8</li>
+                    <li>best seller 옷9</li>
+                    <li>best seller 옷10</li>
+                </ul>
+            </main>
+
+            <footer>
+                <h2>hello footer!</h2>
+                <address>제주시 인다 1길</address>
+            </footer>
+        </div>
+    </div>
+</body>
+<!-- React JS는 어플리케이션이 아주 Interactive하도록 만들어주는 library -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<!-- React DOM은 React element들을 HTML body에 둘 수 있도록 해준다 -->
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<!-- 바벨은 JSX를 브라우저가 이해 할 수 있는 형태로 바꾸어 준다 -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+    //const header = (
+        //<header>
+            //<h1>hello world shop</h1>
+            //<nav>
+                //<ul>
+                    //<li>링크1</li>
+                    //<li>링크2</li>
+                    //<li>링크3</li>
+                    //<li>링크4</li>
+                    //<li>링크5</li>
+                //</ul>
+            //</nav>
+        //</header>
+    //)
+    //const main = (
+        //<main>
+            //<h2>hello world!</h2>
+            //<p>product list</p>
+            //<ul>
+                //<li>best seller 옷1</li>
+                //<li>best seller 옷2</li>
+                //<li>best seller 옷3</li>
+                //<li>best seller 옷4</li>
+                //<li>best seller 옷5</li>
+                //<li>best seller 옷6</li>
+                //<li>best seller 옷7</li>
+                //<li>best seller 옷8</li>
+                //<li>best seller 옷9</li>
+                //<li>best seller 옷10</li>
+            //</ul>
+        //</main>
+    //)
+    //const footer = (
+        //<footer>
+            //<h2>hello footer!</h2>
+            //<address>제주시 인다 1길</address>
+        //</footer>
+    //)
+//
+    //// JSX에서 코드의 개행이 필요할 경우 소괄호를 사용하여 묶습니다.
+    //const body = (
+        //<div>
+            //{header}
+            //{main}
+            //{footer}
+        //</div>
+    //);
+//
+    //const root = document.getElementById("root");
+    //ReactDOM.render(body,root);
+</script>
+
+<script type="text/babel">
+
+
+    //function Header() {
+        //return (
+            //<header>
+                //<h1>hello world shop</h1>
+                //<nav>
+                    //<ul>
+                        //<li>링크1</li>
+                        //<li>링크2</li>
+                        //<li>링크3</li>
+                        //<li>링크4</li>
+                        //<li>링크5</li>
+                    //</ul>
+                //</nav>
+            //</header>
+        //)
+    //}
+//
+    //function Main() {
+        //return (
+            //<main>
+                //<h2>hello world!</h2>
+                //<p>product list</p>
+                //<ul>
+                    //<li>best seller 옷1</li>
+                    //<li>best seller 옷2</li>
+                    //<li>best seller 옷3</li>
+                    //<li>best seller 옷4</li>
+                    //<li>best seller 옷5</li>
+                    //<li>best seller 옷6</li>
+                    //<li>best seller 옷7</li>
+                    //<li>best seller 옷8</li>
+                    //<li>best seller 옷9</li>
+                    //<li>best seller 옷10</li>
+                //</ul>
+            //</main>
+        //)
+    //}
+//
+    //function Footer() {
+        //return (
+            //<footer>
+                //<h2>hello footer!</h2>
+                //<address>제주시 인다 1길</address>
+            //</footer>
+        //)
+    //}
+//
+    //function App() {
+        //return (
+            //<div>
+                //<Header />
+                //<Main />
+                //<Footer />
+            //</div>
+        //)
+    //}
+//
+    //const root = document.querySelector('#root');
+    //ReactDOM.render(<App />, root);
+</script>
+</html>
