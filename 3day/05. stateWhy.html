@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<!-- 리랜더링하는 비효율적인 방법 -->
+
+<body>
+
+    <div id="root"></div>
+
+</body>
+<!-- React JS는 어플리케이션이 아주 Interactive하도록 만들어주는 library -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<!-- React DOM은 React element들을 HTML body에 둘 수 있도록 해준다 -->
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<!-- 바벨은 JSX를 브라우저가 이해 할 수 있는 형태로 바꾸어 준다 -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+    let a = 100;
+    function countUp() {
+        console.log(a);
+        a = a + 1;
+        render();
+    }
+    function render() {
+        ReactDOM.render(<Container />, root);
+        // 모든 변수가 변할때마다 컴포넌트를 업데이트 한다면 많은 리소스가 낭비될 것입니다. 그래서 특정 변수를 지정하여 그 변수가 변할 때마다 컴포넌트를 업데이트하라는 명령을 내려주어야 합니다.
+    }
+    const root = document.getElementById("root");
+    const Container = () => (
+        <div>
+            <h1>Total Clicks: {a}</h1>
+            <button onClick={countUp}>Click me</button>
+        </div>);
+    render();
+
+</script>
+
+</html>

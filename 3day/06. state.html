@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<!-- modifier함수는 그 값으로 업데이터하고 리렌더링 -->
+
+<body>
+
+    <div id="root"></div>
+
+</body>
+<!-- React JS는 어플리케이션이 아주 Interactive하도록 만들어주는 library -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<!-- React DOM은 React element들을 HTML body에 둘 수 있도록 해준다 -->
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<!-- 바벨은 JSX를 브라우저가 이해 할 수 있는 형태로 바꾸어 준다 -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+    const root = document.getElementById("root");
+
+    // 리액트 훅을 이용함으로써 함수형 컴포넌트를 사용가능
+    // 훨씬 코드가 짧고 간결
+    function App() {
+        const [counter, modifier] = React.useState(0);
+        const onClick = () => {
+            // modifier(counter + 1);
+            modifier((current) => current + 1);
+        }
+        return (
+            <div>
+                <h1>Total Clicks: {counter}</h1>
+                <button onClick={onClick}>Click me</button>
+            </div>
+        )
+    };
+
+    //컴포넌트 사이에서 상태 로직을 재사용하기 어렵습니다.
+    //복잡한 컴포넌트들은 이해하기 어렵습니다.
+    // React 에서의 Class 사용을 위해서는 JavaScript의 this 키워드가 어떻게 작동하는지 알아야만 합니다. JavaScript의 this키워드는 대부분의 다른 언어에서와는
+    //다르게 작동함으로 사용자에게 큰 혼란을 주었으며, 코드의 재사용성과 구성을 매우 어렵게 만들고는 했습니다. 또한 class의 사용을 위해 이벤트 핸들러가 등록되는 방법을 정확히 파악해야합니다. 
+    class AppUgly extends React.Component {
+        state = {
+            counter : 0
+        } //상태값 정의
+        render() {
+            const {counter} = this.state // 비구조화 할당
+            return (
+                <div className='uglyApp'>
+                    <h1>Total Clicks: {counter}</h1>
+                    <button onClick={this.onClick}>Click me</button>
+                </div>
+            )
+        }
+        onClick = () => {
+            this.setState(state => {
+                return {
+                    counter : state.counter + 1
+                }
+            })
+        }
+    }
+    ReactDOM.render(<App />, root);
+
+</script>
+</html>
